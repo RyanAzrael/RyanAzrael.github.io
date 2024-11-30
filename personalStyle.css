@@ -33,11 +33,25 @@ body{
     /* border: 2px solid red; */
 }
 
+@keyframes an1{
+    0%{
+        top:-100px;
+        opacity:0;
+    }
+    100%{
+        top:0px;
+        opacity:1;
+    }
+}
+
 .topbar img{
     height: 60px;
     margin-top: 10px;
     margin-left: 20px;
     float: left;
+    position: absolute;
+    top: 0;
+    animation: an1 .8s 1 forwards;
 }
 
 .topbar ul{
@@ -45,6 +59,10 @@ body{
     padding-right: 40px;
     float: right;
     width: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: an1 .8s 1 forwards;
 }
 
 .topbar li{
@@ -91,6 +109,19 @@ body{
     background-image: radial-gradient(ellipse 50% 35%, #999, transparent);
 }
 
+@keyframes an2{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+        filter: blur(5px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0px);
+    }
+}
+
 .logo{
     display: flex;
     justify-content: center;
@@ -101,6 +132,8 @@ body{
     border-radius: 50%;
     margin: 0 auto;    
     margin-top: 100px;
+    opacity: 0;
+    animation: an2 .8s .4s 1 forwards;
 }
 
 .logo img{
@@ -114,18 +147,23 @@ body{
     background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     align-items: center;
-
+    border-radius: 20px;
+    opacity: 0;
+    animation: an2 .8s .8s 1 forwards;
 }
 
 .info p{
     font-size: 2rem;
     padding-left: 40px;
     line-height: 1.4;
+    opacity: 0;
+    animation: an2 .8s .8s 1 forwards;
 }
 
 .face{
     height: 350px;
     display: block;    
+    border-radius: 20px 0 0 20px;
 }
 
 .detail{
@@ -133,18 +171,21 @@ body{
     padding-bottom: 100px;
     width: 1200px;
     background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
 }
 
 .detail h2{
     padding-top: 70px;
     font-size: 4rem;
     text-align: center;
+    opacity: 0;
 }
 
 .detail p{
     padding: 30px 80px;
     font-size: 1.8rem;
     line-height: 1.5;
+    opacity: 0;
 }
 
 .detail .fa-solid{
@@ -156,6 +197,7 @@ body{
     font-size: 90px;
     text-align: center;
     line-height: 180px;
+    opacity: 0;
 }
 
 .detail ul{
@@ -178,11 +220,13 @@ body{
     font-size: 4rem;
     text-align: center;
     margin: 50px 0 30px;
+    opacity: 0;
 }
 
 .swiper{
     width: 600px;
     height: 300px;
+    opacity: 0;
 }
 
 .swiper img{
@@ -194,13 +238,27 @@ body{
     display: flex;
     padding-bottom: 60px;
     justify-content: center;
+    opacity: 0;
 }
 
 .social div{
-    display: block;
-    background-color: #e5e5e5;
-    width: 100px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 300px;
     height: 100px;
-    border-radius: 50%;
-    margin: 0 15px;
+    margin: 0 25px;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.social i{
+    font-size: 55px;
+    margin-left: 20px;
+}
+
+.social i:hover{color: cornflowerblue;}
+
+.social p{
+    font-size: 1.8rem;
+    margin-left: 35px;
 }
