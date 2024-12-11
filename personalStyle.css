@@ -114,8 +114,8 @@ body{
 
 .topbar li:last-child::after{display: block;}
 
-.topbar li:hover{
-    background-image: radial-gradient(ellipse 50% 35%, #999, transparent);
+.topbar a:hover{
+    text-decoration: underline 2px;
 }
 
 @keyframes an2{
@@ -412,9 +412,9 @@ body{
     }
     
     .social div{
-        width: 23vw;
+        width: 25vw;
         height: 40px;
-        margin: 10px 7px 20px;
+        margin: 10px 5px 20px;
         border-radius: 15px;
     }
     
