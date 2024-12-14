@@ -274,7 +274,7 @@ body{
 }
 
 .fbx{
-    width: 800px;
+    width: 700px;
     margin: 0 auto;
     opacity: 0;
     /* border: 2px solid #999; */
@@ -284,7 +284,10 @@ body{
 }
 
 .fbx li{
+    
     filter: grayscale(1);
+    padding: 0 20px 20px;
+    border: 0;
 }
 
 .fbx li:hover{
