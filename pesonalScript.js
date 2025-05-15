@@ -18,6 +18,7 @@ $(function(){
     var con9 = $('.fbx1').offset().top
     var con10 = $('.fbx2').offset().top
     var con11 = $('.fbx3').offset().top
+    var con12 = $('.detail').offset().top
 
     // console.log(el1, el2, el3)
 
@@ -96,6 +97,9 @@ $(function(){
         }
         if(N > con11 - 600){
             $('.fbx3').animate({opacity:'1'}, 300)
+        }
+        if(N > con12 - 600){
+            $('.detail').animate({opacity:'1'}, 300)
         }
 
 
