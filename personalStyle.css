@@ -182,7 +182,7 @@ body{
 
 .detail{
     margin: 100px auto;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     width: 1000px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
@@ -246,12 +246,16 @@ body{
     opacity: 0;
 }
 
+.social2{
+    margin-bottom: 30px;
+}
+
 .social div{
     display: flex;
     background-color: rgba(255, 255, 255, 0.8);
-    width: 330px;
-    height: 100px;
-    margin: 0 10px;
+    width: 450px;
+    height: 80px;
+    margin: 0 40px;
     align-items: center;
     border-radius: 30px;
 }
@@ -438,9 +442,14 @@ body{
     }
     
     .social{
-        padding-bottom: 30px;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 0;
+    }
+
+    .social2{
+        padding-bottom: 15px;
+        margin-bottom: 0;
     }
     
     .social div{
