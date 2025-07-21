@@ -196,6 +196,12 @@ body{
     opacity: 0;
 }
 
+.detail .belink{
+    width: 110px;
+    font-size: 3rem;
+    margin: 30px auto 0;
+}
+
 .detail p{
     padding: 40px 80px 0;
     font-size: 1.8rem;
@@ -225,10 +231,15 @@ body{
     border-right: solid 2px #999;
 }
 
+.detail .hbtli{
+    width: 330px;
+}
+
 .detail li:last-child{border-right: 0;}
 
 .detail li p{
     font-size: 1.6rem;
+    padding: 30px 60px 10px;
 }
 
 .detail h3{
@@ -398,6 +409,12 @@ body{
         border-radius: 10px;
         padding-bottom: 40px;
     }
+
+    .detail .belink{
+        width: 85px;
+        font-size: 3rem;
+        margin: 15px auto 0;
+    }
     
     .detail h2{
         padding-top: 30px;
@@ -430,8 +447,17 @@ body{
         flex-direction: column;
     }
 
+    .detail .hbtli{
+        width: auto;
+    }
     
-    .detail li{}
+    .detail .hbtp{
+        padding: 20px 50px 10px;
+    }
+
+    .detail li{
+        border: 0;
+    }
     
     .detail li:last-child{}
     
