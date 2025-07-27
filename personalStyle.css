@@ -169,9 +169,12 @@ body{
     animation: an2 .8s .8s 1 forwards;
 }
 
+
 .info .infoicon{
     height: 50px;
-    margin-left: 30px;
+    margin-left: 25px;
+    vertical-align: middle;
+    padding-bottom: 10px;
 }
 
 .face{
@@ -240,6 +243,7 @@ body{
 .detail li p{
     font-size: 1.6rem;
     padding: 30px 60px 10px;
+    text-align: left;
 }
 
 .detail h3{
