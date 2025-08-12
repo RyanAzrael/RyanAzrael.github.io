@@ -200,9 +200,9 @@ body{
 }
 
 .detail .belink{
-    width: 110px;
     font-size: 3rem;
     margin: 30px auto 0;
+    text-align: center;
 }
 
 .detail p{
